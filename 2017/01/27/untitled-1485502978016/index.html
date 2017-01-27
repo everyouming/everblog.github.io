@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      git使用之配置SSH | My Blog 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Lee">
+    
+    
+
+    <meta name="description" content="git是分布式的代码管理工具，远程的代码管理是基于ssh的，所以要使用远程的git则需要ssh的配置。那么怎么配置github的ssh呢?
+
+一 、设置git的user name和email12$ git config --global user.name &amp;quot;用户名&amp;quot;$ git config --global user.email &amp;quot;注册邮箱&amp;quot;
+
+用户名和">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git使用之配置SSH | My Blog">
+<meta property="og:url" content="http://snow-night.github.io/2017/01/27/untitled-1485502978016/index.html">
+<meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="git是分布式的代码管理工具，远程的代码管理是基于ssh的，所以要使用远程的git则需要ssh的配置。那么怎么配置github的ssh呢?
+
+一 、设置git的user name和email12$ git config --global user.name &amp;quot;用户名&amp;quot;$ git config --global user.email &amp;quot;注册邮箱&amp;quot;
+
+用户名和">
+<meta property="og:updated_time" content="2017-01-27T10:41:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git使用之配置SSH | My Blog">
+<meta name="twitter:description" content="git是分布式的代码管理工具，远程的代码管理是基于ssh的，所以要使用远程的git则需要ssh的配置。那么怎么配置github的ssh呢?
+
+一 、设置git的user name和email12$ git config --global user.name &amp;quot;用户名&amp;quot;$ git config --global user.email &amp;quot;注册邮箱&amp;quot;
+
+用户名和">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+    <!--访问未加载的字体-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">My Blog</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          by Lee
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/snow-night" title="Huno on GitHub">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+    -->
+    <!--
+      <li class="navigation__item">
+        <a href="http://weibo.com/5717305785" title="微博">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+    -->
+   
+
+
+
+  </ul>
+</nav>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">git使用之配置SSH</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-01-27" class="post-meta__date date">2017-01-27</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <blockquote>
+<p>git是分布式的代码管理工具，远程的代码管理是基于ssh的，所以要使用远程的git则需要ssh的配置。<br>那么怎么配置github的ssh呢?</p>
+</blockquote>
+<h2 id="一-、设置git的user-name和email"><a href="#一-、设置git的user-name和email" class="headerlink" title="一 、设置git的user name和email"></a>一 、设置git的user name和email</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;用户名&quot;</div><div class="line">$ git config --global user.email &quot;注册邮箱&quot;</div></pre></td></tr></table></figure>
+<blockquote>
+<p><em>用户名和注册邮箱处换成你注册github时的用户名和注册邮箱</em></p>
+</blockquote>
+<p>配置完成后可以用下面命令检查是否配置成功:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ git config --list</div><div class="line">```	</div><div class="line">## 二、生成SSH密钥过程：</div><div class="line">1. 查看是否已经有了ssh密钥：</div></pre></td></tr></table></figure></p>
+<p>$ cd ~/.ssh<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">		如果没有密钥则不会有此文件夹，有则备份删除</div><div class="line">2. 生成密钥：</div></pre></td></tr></table></figure></p>
+<p>$ ssh-keygen -t rsa -C “注册邮箱”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">		期间有一步要求输入密码,一般不输入,直接回车即可</div><div class="line">3. 完成后查看ssh目录,会有`id_rsa`和`id_rsa.pub`两个文件,下面会用到</div><div class="line"></div><div class="line">## 三、配置SSH</div><div class="line"></div><div class="line">1. 登录到github</div><div class="line">2. 在个人中心的`Settings`里面找到`SSH and GPG keys`</div><div class="line">3. 点击右上角`New SSH key`</div><div class="line">4. 这是会要求填写`Title`和`Key`,`Title`填你注册github时的邮箱,`Key`填写之前生成的`id_rsa.pub`里面的内容即可</div><div class="line"></div><div class="line">## 测试是否成功</div></pre></td></tr></table></figure></p>
+<p>$ ssh git@github.com<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">如果提示:</div></pre></td></tr></table></figure></p>
+<p>Hi XXX! You’ve successfully authenticated, but GitHub does not provide shell access.<br>```<br>则说明已经配置成功!</p>
+
+  </section>
+
+  
+  
+
+<section class="post-comments">
+
+    <div class="ds-thread" data-thread-key="2017/01/27/untitled-1485502978016/" data-title="git使用之配置SSH"></div>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"snow-night"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+
+</section>
+
+
+
+
+
+
+</article>
+
+
+            <footer class="footer">
+<!-- 版权 -->
+    <span class="footer__copyright">Copyright &copy; 2017 Mr.Lee | Theme by <a href="https://github.com/someus/huno">Huno</a></span>
+ <!--未加载转动效果 -->
+    <span id="busuanzi_container_site_pv">
+    本站总访问量<!--view-->
+<span id="busuanzi_value_site_pv"><i class="fa fa-spinner"></i></span>
+<!--
+<span id="busuanzi_value_site_pv"></span>
+times -->次
+    </span>
+   
+   <!-- <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题 <a href="https://github.com/someus/huno">Huno</a></span> -->
+</footer>
+
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
